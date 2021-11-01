@@ -40,6 +40,38 @@ function App() {
 
   return (
     <div className="App">
+
+      <Box>
+        <Paper>
+          <List>
+            <ListItem>
+              <ListItemText 
+                primary={ `${display.firstName} ${display.lastName}` }
+                secondary='Name'
+              />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemText 
+                primary={display.email}
+                secondary="Email"
+              />
+            </ListItem>
+            <Divider />
+            <ListItem>
+              <ListItemText 
+                primary={display.location}
+                secondary="Location"
+              />
+            </ListItem>
+          </List>
+        </Paper>
+      </Box>
+
+
+
+
+
       <Box>
         <Paper>
           <form onSubmit={handleSubmit}>
