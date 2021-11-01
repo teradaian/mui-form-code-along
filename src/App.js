@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import Form from './Components/Form'
 import Display from './Components/Display'
