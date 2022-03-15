@@ -19,7 +19,7 @@ function App() {
   const theme = useMemo(
     () => createTheme({
       palette: {
-        mode: mode,
+        mode,
       }
     }), [mode]
   )
